@@ -1,0 +1,62 @@
+
+A = 15
+B = 4
+C = A + B
+D = A * B
+E = pow(A, B)
+F = A / B
+G = A // B
+H = A % B
+
+
+print(f"Le resultat de {A} + {B} est {A + B}")
+print(f"Le resultat de {A} x {B} est {A * B}")
+print(f"Le resultat de {A} puissance {B} est {pow(A, B)}")
+print(f"Le resultat de la division de {A} par {B} est {A / B}")
+print(f"Le resultat de la division entière de {A} par {B} est {A // B}")
+print(f"Le reste de la division de {A} par {B} est {A % B}")
+
+
+my_dictionary = {"A + B": C, "A x B": D, "A puissance B": E, "A / B": F, "A // B": G}
+my_dictionary["A % B"] = H
+my_dictionary.pop("A + B")
+print(my_dictionary.keys())
+print(my_dictionary.values())
+print(my_dictionary.items())
+
+
+my_tuple = (A, B, C)
+my_tuple = list(my_tuple)
+my_tuple.append(D)
+my_tuple[0] = 16
+my_tuple.remove(B)
+print(my_tuple)
+
+
+list1 = ["A", "B", "C", "D"]
+list2 = [15, 4, 19, 60]
+list3 = [list1, list2]
+list1.append("E")
+list1.append("F")
+list1.remove("B")
+list1[0] = "G"
+print(list1)
+
+
+number1 = input("Entrez un nombre entier: ")
+if (number1.isdigit() == False):
+    print("Vous avez fait une erreur.")
+else:
+    number1 = int(number1)
+    
+    number2 = input("Entrez un autre nombre entier: ")
+    if (number2.isdigit() == False):
+        print("Vous avez fait une erreur.")
+    else:
+        number2 = int(number2)
+        if (number1 > number2):
+            print(f"{number1} est supérieur à {number2}")
+        elif (number1 < number2):
+            print(f"{number1} est inférieur à {number2}")
+        else:
+            print(f"{number1} est égal à {number2}")
