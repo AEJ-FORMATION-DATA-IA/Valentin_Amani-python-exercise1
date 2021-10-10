@@ -30,6 +30,7 @@ my_tuple = list(my_tuple)
 my_tuple.append(D)
 my_tuple[0] = 16
 my_tuple.remove(B)
+my_tuple = tuple(my_tuple)
 print(my_tuple)
 
 
@@ -60,3 +61,4 @@ else:
             print(f"{number1} est inférieur à {number2}")
         else:
             print(f"{number1} est égal à {number2}")
+
